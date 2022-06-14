@@ -12,7 +12,7 @@ int main( )
         scanf("%d", &n);
 
     printf("\b\b Pomocu rekurzije: \n");
-        printf("\b\b = %d\n", serije(n));       /*  \b to erase last +sign */
+        printf("\b\b = %d\n", serije(n));      
         printf("\n\b\b Pomocu rekurzije: \n");
         printf("\b\b = %d\n\n\n", rserije(n));
 
@@ -40,4 +40,4 @@ int rserije(int n)
         sum = (n + rserije(n-1));
         printf("%d + ",n);
         return sum;
-}/*End of rseries()*/
+}
